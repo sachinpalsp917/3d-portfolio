@@ -9,7 +9,7 @@ import TechStack from "./sections/TechStack";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 
-const app = () => {
+const App = () => {
   return (
     <>
       <NavBar />
@@ -25,4 +25,4 @@ const app = () => {
   );
 };
 
-export default app;
+export default App;
