@@ -9,7 +9,7 @@ const AppShowcase = () => {
   const sectionRef = useRef(null);
   const appleRef = useRef(null);
   const brainwaveRef = useRef(null);
-  const GTAVIRef = useRef(null);
+  const leetlabRef = useRef(null);
 
   useGSAP(() => {
     // Animation for the main section
@@ -20,7 +20,7 @@ const AppShowcase = () => {
     );
 
     // Animations for each app showcase
-    const cards = [appleRef.current, brainwaveRef.current, GTAVIRef.current];
+    const cards = [appleRef.current, brainwaveRef.current, leetlabRef.current];
 
     cards.forEach((card, index) => {
       gsap.fromTo(
@@ -49,7 +49,13 @@ const AppShowcase = () => {
         <div className="showcaselayout">
           <div ref={appleRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Apple website" />
+              <a
+                href="https://apple-iphone-16-pro-nine.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/images/project1.png" alt="Apple website" />
+              </a>
             </div>
             <div className="text-content">
               <h2>A Modern Apple page showcasing new model of iphone 16</h2>
@@ -63,19 +69,22 @@ const AppShowcase = () => {
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={brainwaveRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
-                <img
-                  src="/images/project2.png"
-                  alt="Library Management Platform"
-                />
+                <a
+                  href="https://brainwave-seven-gamma.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/images/project2.png" alt="" />
+                </a>
               </div>
               <h2>A Modern UI/UX Platform built using GSAP</h2>
             </div>
 
-            <div className="project" ref={GTAVIRef}>
+            <div className="project" ref={leetlabRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <img src="/images/project3.png" alt="GTAVI" />
               </div>
-              <h2>A GTAVI landing page with selfie effect</h2>
+              <h2>A Cool looking GTAVI landing page</h2>
             </div>
           </div>
         </div>
