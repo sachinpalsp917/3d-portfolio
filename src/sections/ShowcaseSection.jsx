@@ -47,21 +47,21 @@ const AppShowcase = () => {
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
-          <div ref={appleRef} className="first-project-wrapper">
+          <div
+            ref={appleRef}
+            className="first-project-wrapper overflow-hidden "
+          >
             <div className="image-wrapper">
-              <a
-                href="https://apple-iphone-16-pro-nine.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <img src="/images/project1.png" alt="Apple website" />
               </a>
             </div>
             <div className="text-content">
-              <h2>A Modern Apple page showcasing new model of iphone 16</h2>
+              <h2>A Modern Platform to learn DSA problems</h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React, GSAP, three.js & TailwindCSS for a
-                fast, user-friendly experience.
+                An app built with React, Judge0, DaisyUI & TailwindCSS for a
+                fast, user-friendly experience learning Modern Data Structure
+                problems.
               </p>
             </div>
           </div>
@@ -70,21 +70,26 @@ const AppShowcase = () => {
             <div className="project" ref={brainwaveRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
                 <a
-                  href="https://brainwave-seven-gamma.vercel.app"
+                  href="https://apple-iphone-16-pro-nine.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img src="/images/project2.png" alt="" />
                 </a>
               </div>
-              <h2>A Modern UI/UX Platform built using GSAP</h2>
+              <h2>A Modern Apple page showcasing new model of iphone 16</h2>
             </div>
-
-            <div className="project" ref={leetlabRef}>
-              <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="GTAVI" />
+            <div className="project" ref={brainwaveRef}>
+              <div className="image-wrapper bg-[#FFEFDB]">
+                <a
+                  href="https://brainwave-seven-gamma.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/images/project3.png" alt="" />
+                </a>
               </div>
-              <h2>A Cool looking GTAVI landing page</h2>
+              <h2>A Modern UI/UX Platform built using GSAP</h2>
             </div>
           </div>
         </div>
